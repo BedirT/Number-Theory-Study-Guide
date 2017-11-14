@@ -64,4 +64,19 @@ This topic is not that hard, so just this video should be enough for understandi
 
 ### Topic 6: Number Theoretic Functions
 
+##### Tau Function
+[Video Explanation (Explains both Tau and Sigma Functions)](https://www.youtube.com/watch?v=DcJxt7oD-_I)
+
+##### Sigma Function
+[Video Explanation (Explains both Tau and Sigma Functions)](https://www.youtube.com/watch?v=DcJxt7oD-_I) (Also concepts for **Sigma* Function**, **Proper divisors**, **Perfect Numbers**, **Deficiant Numbers**, **Abundunt Numbers**, **Amicable Pairs** introduced)
+
+##### Euler's Phi Function
+
+##### Mobius Function
+
+
+##### Hensel's Lemma
+This is not covered in this topic, but we learned it in this chapter, so I will include it here.
+[Hensel's Lemma](http://www.cs.uleth.ca/~yazdani/courses/2011-2012/math3461/Hensel_sample.pdf)
+
 ### Topic 7: Euler's Generalization of Fermat's Theorem
