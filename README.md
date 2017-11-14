@@ -65,12 +65,13 @@ This topic is not that hard, so just this video should be enough for understandi
 ### Topic 6: Number Theoretic Functions
 
 ##### Tau Function
-[Video Explanation (Explains both Tau and Sigma Functions)](https://www.youtube.com/watch?v=DcJxt7oD-_I)
+[Video Explanation (Explains both Tau and Sigma Functions) - Dustin Jones](https://www.youtube.com/watch?v=DcJxt7oD-_I)
 
 ##### Sigma Function
-[Video Explanation (Explains both Tau and Sigma Functions)](https://www.youtube.com/watch?v=DcJxt7oD-_I) (Also concepts for **Sigma* Function**, **Proper divisors**, **Perfect Numbers**, **Deficiant Numbers**, **Abundunt Numbers**, **Amicable Pairs** introduced)
+[Video Explanation (Explains both Tau and Sigma Functions) - Dustin Jones](https://www.youtube.com/watch?v=DcJxt7oD-_I) (Also concepts for **Sigma* Function**, **Proper divisors**, **Perfect Numbers**, **Deficiant Numbers**, **Abundunt Numbers**, **Amicable Pairs** introduced)
 
 ##### Euler's Phi Function
+[Euler's Phi Function - Dustin Jones](https://www.youtube.com/watch?v=QbsWEVcjJy0)
 
 ##### Mobius Function
 
