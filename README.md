@@ -64,6 +64,8 @@ This topic is not that hard, so just this video should be enough for understandi
 
 ### Topic 6: Number Theoretic Functions
 
+Even though they are easy to understand functions, calculations and problems might be difficult & tricky to process.
+
 ##### Tau Function
 [Video Explanation (Explains both Tau and Sigma Functions) - Dustin Jones](https://www.youtube.com/watch?v=DcJxt7oD-_I)
 
@@ -73,11 +75,12 @@ This topic is not that hard, so just this video should be enough for understandi
 ##### Euler's Phi Function
 [Euler's Phi Function - Dustin Jones](https://www.youtube.com/watch?v=QbsWEVcjJy0)
 
+[Euler's totient function | Journey into cryptography - Khan Academy](https://www.youtube.com/watch?v=qa_hksAzpSg) - Explains what is phi function really good. Not going into calculations and stuff, basic idea is covered though.
+
 ##### Mobius Function
 
 
 ##### Hensel's Lemma
-This is not covered in this topic, but we learned it in this chapter, so I will include it here.
-[Hensel's Lemma](http://www.cs.uleth.ca/~yazdani/courses/2011-2012/math3461/Hensel_sample.pdf)
+This is not covered in this topic, but we learned it in this chapter, so I will just include it here. [Hensel's Lemma](http://www.cs.uleth.ca/~yazdani/courses/2011-2012/math3461/Hensel_sample.pdf)
 
 ### Topic 7: Euler's Generalization of Fermat's Theorem
