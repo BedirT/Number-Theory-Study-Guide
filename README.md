@@ -234,3 +234,15 @@ blablabla some explanation:
 - Our message will be: $110011101000010110100$
 - Now we divide: $11001\ 11010\ 00010\ 11010\ 0$
 - What about the 0 at the end ?? We add 1's instead of every missing element (Dummy text) so it will be $01111$. 
+
+#### El Gamal Cryptosystem
+
+Unlike Knapsack I guess I found a really good tutorial about this… so I don't have to type all those stuff YEY! If you don't understand (you specifically!) let me know by putting an issue [Right Here](https://github.com/BedirT/Number-Theory-Study-Guide/issues). 
+
+Here is the link that you were searching for:
+
+- [Jeff Suzuki - El Gamal Encryption](https://www.youtube.com/watch?v=pyirxbHuvOw) - Yes him again...
+- [Daniel Rees - El Gamal](https://www.youtube.com/watch?v=Ex9sN5MorRs) - Really good sample, and explanation.
+
+I really liked both videos so… Decide yourself. (second one :smile:) 
+
