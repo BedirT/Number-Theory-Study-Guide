@@ -14,32 +14,32 @@ Basically topics here are just proof systems and how to do proof properly in Mat
 The book that I am working on, just passed over these topics so you don't really have to work deeply on them. Knowing how to use induction would be beneficial though (more like neccesity :) ). I don't think we will cover other proof methods like deductions etc. in this course, so Induction will be assumed as default proof solving concept.
 
 ### Topic 2: Divisibility Theory in the Integers
-##### The Division Algorithm
+#### The Division Algorithm
 This really is too basic... Literaly... 
 
 I will just put the definition for "the Division Algorithm" and you will see what I mean:
 **Theorem** Given integers a, b with b > 0 there exist some unique integers q and r such that,
 a = qb + r where 0 <= r < b... Really...
 
-##### The Greatest Common Divisor (GCD)
+#### The Greatest Common Divisor (GCD)
 I used the book for the concept I believe. It is an easy topic, but it might be tricky if you are not using calculator and the numbers are enormous.
 
-##### Euclidean Algorithm to find GCD
+#### Euclidean Algorithm to find GCD
 This is an algorithm to solve GCD problems. Basically, (at least in the book that I am studying) this is the way we approach to almost any gcd problems in hand.
 
-##### Diophantine Equations
+#### Diophantine Equations
 Fancy name,
 
-##### The Least Common Multiple (LCM)
+#### The Least Common Multiple (LCM)
 
 
 ### Topic 3: Primes and Prime Distibutions
 
-##### Fundamental Theorem of Arithmetic
+#### Fundamental Theorem of Arithmetic
 
-##### Sieve of Erotosthenes
+#### Sieve of Erotosthenes
 
-##### The Goldbach Conjecture
+#### The Goldbach Conjecture
 
 ### Topic 4: The Theory on Congruences
 
@@ -48,12 +48,12 @@ Fancy name,
 
 ### Topic 5: Fermat's Theorem
 
-##### Fermat's Decomposition
+#### Fermat's Decomposition
 [Fermat's decomposition - DLBmaths](https://www.youtube.com/watch?v=0a6R8qPZCk4) Beautiful video that explains what Fermat's decomposition is, with example questions. I love the guy who creates these videos (I already put couple videos of him for the previous chapters.) ENJOY!
 
 This topic is not that hard, so just this video should be enough for understanding the topic. A little practice and you will be set for your exam...
 
-##### Fermat's Little Theorem
+#### Fermat's Little Theorem
 
 [Video - Socratica](https://www.youtube.com/watch?v=w0ZQvZLx2KA) *
 
@@ -67,28 +67,28 @@ This topic is not that hard, so just this video should be enough for understandi
 
 Even though they are easy to understand functions, calculations and problems might be difficult & tricky to process.
 
-##### Tau Function
+#### Tau Function
 [Video Explanation (Explains both Tau and Sigma Functions) - Dustin Jones](https://www.youtube.com/watch?v=DcJxt7oD-_I)
 
-##### Sigma Function
+#### Sigma Function
 [Video Explanation (Explains both Tau and Sigma Functions) - Dustin Jones](https://www.youtube.com/watch?v=DcJxt7oD-_I) (Also concepts for **Sigma* Function**, **Proper divisors**, **Perfect Numbers**, **Deficiant Numbers**, **Abundunt Numbers**, **Amicable Pairs** introduced)
 
-##### Euler's Phi Function
+#### Euler's Phi Function
 [Euler's Phi Function - Dustin Jones](https://www.youtube.com/watch?v=QbsWEVcjJy0)
 
 [Euler's totient function | Journey into cryptography - Khan Academy](https://www.youtube.com/watch?v=qa_hksAzpSg) - Explains what is phi function really good. Not going into calculations and stuff, basic idea is covered though.
 
-##### Mobius Function
+#### Mobius Function
 
 
-##### Hensel's Lemma
+#### Hensel's Lemma
 This is not covered in this topic, but we learned it in this chapter, so I will just include it here. [Hensel's Lemma](http://www.cs.uleth.ca/~yazdani/courses/2011-2012/math3461/Hensel_sample.pdf)
 
 ### Topic 7: Euler's Generalization of Fermat's Theorem
 
 ### Topic 10: Cryptography
 
-####Ceasar Cipher
+#### Ceasar Cipher
 
 Ceasar Cipher is I guess one of the easiest crytography method. We only need a message and a key that will represent the shift value for our alphabet. So if I choose 2 as my shifting key, then all letters will shift by 2 (mod 26) - *Since we have 26 letters in English Alphabet*. So **A** will become A, B, **C** and **B** will be B, C, **D** if we apply this to every letter in the alphabet:
 
@@ -105,7 +105,7 @@ If you are still confused, here is a short beautiful video from KhanAcademy (as 
 
 **IMPORTANT NOTE** This method that I explain is called Ceasar Cipher, however in the book that I am working from, this cipher has initial key value of **3**. I believe it comes from Ceasar since he was the one who uses this. But most of the other sources are using keys to represent the shift, so if there is no key given, and they want you to decipher some text with Ceasar Cipher, you may assume that the key is **3**.
 
-####Vigenere Cipher
+#### Vigenere Cipher
 
 Vigenere is again an easy ciphering method, more secure then Ceasar Cipher, but still vulnerable. This time we have a key as string instead of one letter or one number. To our message, we will add the repeting key and the result will be our encrypted message. With this way we will avoid the problem of frequency in the Ceasar Cipher. So how is it happening: Let's say that we have the key: **BEST**. And my message is **FOCUS MONKEY**. Since I have 4 letters key and 11 letters message, obviously I cannot use my key by itself. What do I do is, as I mentioned before, I just add my key to itself as long as it is shorter than my message. So: **BESTBESTBEST**, this is 12. Since it is longer than my message I am done. I will use the same logic as before for adding up the values. If you know a bit about Computers (not gaming wise, like legit computer stuff :slightly_smiling_face:) then you probably know ASCII table. This will be same logic, we can use some kind of table to convert letters to the others. This table is same for every one, we just add up the alphabetical values in mod 26 as before. So since **A** is the first letter it has the value of **00**, and since **B** is the second it will have the value of **1**… So table will be like this then:
 
@@ -149,7 +149,7 @@ This one is the cipher that has most secrecy, and it cannot be improved more sta
 
 [Khan Academy - One-Time Pad Cipher](https://www.youtube.com/watch?v=FlIG3TvQCBQ)
 
-####The RSA Algorithm
+#### The RSA Algorithm
 
 Public RSA is the most important and popular public-key crypto system. Couple methods we need to know to use this algorithm are:
 
