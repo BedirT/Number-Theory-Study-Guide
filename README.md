@@ -49,13 +49,14 @@ Fancy name,
 ### Topic 5: Fermat's Theorem
 
 ##### Fermat's Decomposition
-- Video: Beautiful video that explains what Fermat's decomposition is, with example questions. I love the guy who creates these videos (I already put couple videos of him for the previous chapters.) ENJOY! [Video Link - DLBmaths](https://www.youtube.com/watch?v=0a6R8qPZCk4)
+[Fermat's decomposition - DLBmaths](https://www.youtube.com/watch?v=0a6R8qPZCk4) Beautiful video that explains what Fermat's decomposition is, with example questions. I love the guy who creates these videos (I already put couple videos of him for the previous chapters.) ENJOY!
 
 This topic is not that hard, so just this video should be enough for understanding the topic. A little practice and you will be set for your exam...
 
 ##### Fermat's Little Theorem
 
 [Video - Socratica](https://www.youtube.com/watch?v=w0ZQvZLx2KA) *
+
 [Video - Maths with Jay](https://www.youtube.com/watch?v=pMA-dD-KCWM)
 
 [Video (Visualization) - Khan Academy Labs](https://www.youtube.com/watch?v=OoQ16YCYksw)
@@ -84,3 +85,54 @@ Even though they are easy to understand functions, calculations and problems mig
 This is not covered in this topic, but we learned it in this chapter, so I will just include it here. [Hensel's Lemma](http://www.cs.uleth.ca/~yazdani/courses/2011-2012/math3461/Hensel_sample.pdf)
 
 ### Topic 7: Euler's Generalization of Fermat's Theorem
+
+### Topic 10: Cryptography
+
+##### Ceasar Cipher
+
+Ceasar Cipher is I guess one of the easiest crytography method. We only need a message and a key that will represent the shift value for our alphabet. So if I choose 2 as my shifting key, then all letters will shift by 2 (mod 26) - *Since we have 26 letters in English Alphabet*. So **A** will become A, B, **C** and **B** will be B, C, **D** if we apply this to every letter in the alphabet:
+
+| A    | B    | C    | D    | E    | F    | G    | H    | I    | J    | K    | L    | M    | N    | O    | P    | Q    | R    | S    | T    | U    | V    | W    | X    | Y     | Z     |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- | ----- |
+| C    | D    | E    | F    | G    | H    | I    | J    | K    | L    | M    | N    | O    | P    | Q    | R    | S    | T    | U    | V    | W    | X    | Y    | Z    | **A** | **B** |
+
+And as you can see at the end (since I have mod 26) I included the numbers at the beginning lets say index 0 - and index 1 , which are **A** and **B**. I can convert any text into my encrypted message and vice versa, with this table. There is no public thing in this algorithm, only the message will be public, since we didn't use anything other then message and the key that should be obvious :smile:. And the biggest problem with this cipher is, even though without a computer (If we have it we don't even need to know the key, we can try all 26 shifts) the property of languages has the most frequent letter used. If we know this then we can easily count the letter used the most and find the key...
+
+- **Public:** Encrypted Message
+- **Private:** Key
+
+If you are still confused, here is a short beautiful video from KhanAcademy (as usual) that explains: [The Ceaser Cipher](https://www.youtube.com/watch?v=sMOZf4GN3oc)
+
+##### Vigenere Cipher
+
+Vigenere is again an easy ciphering method, more secure then Ceasar Cipher, but still vulnerable. This time we have a key as string instead of one letter or one number. To our message, we will add the repeting key and the result will be our encrypted message. With this way we will avoid the problem of frequency in the Ceasar Cipher. So how is it happening: Let's say that we have the key: **BEST**. And my message is **FOCUS MONKEY**. Since I have 4 letters key and 11 letters message, obviously I cannot use my key by itself. What do I do is, as I mentioned before, I just add my key to itself as long as it is shorter than my message. So: **BESTBESTBEST**, this is 12. Since it is longer than my message I am done. I will use the same logic as before for adding up the values. If you know a bit about Computers (not gaming wise, like legit computer stuff :slightly_smiling_face:) then you probably know ASCII table. This will be same logic, we can use some kind of table to convert letters to the others. This table is same for every one, we just add up the alphabetical values in mod 26 as before. So since **A** is the first letter it has the value of **00**, and since **B** is the second it will have the value of **1**… So table will be like this then:
+
+| A    | B    | C    | D    | E    | F    | G    | H    | I    | J    | K    | L    | M    | N    | O    | P    | Q    | R    | S    | T    | U    | V    | W    | X    | Y    | Z    |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   | 13   | 14   | 15   | 16   | 17   | 18   | 19   | 20   | 21   | 22   | 23   | 24   | 25   |
+
+##### The RSA Algorithm
+
+Public RSA is the most important and popular public-key crypto system. Couple methods we need to know to use this algorithm are:
+
+- [Eulers Totient Function (phi function)](#Euler's Phi Function)
+- [Euler's Generalization of Fermat's Little Theorem](#Euler's Generalization of Fermat's Theorem)
+- [Extended Euclidian Algorithm]()
+
+For main source I will include a paper that my professor handed out, it is explaining really nice and smooth. So if you are ok with a bit of reading the paper should be enough by itself (Only 5 half pages with an example included)
+
+[The Paper - The RSA Algorithm]()
+
+###### Little Note: You don't have to watch all of the videos or follow all tutorials here. Choose the ones that works best for you, because most of them are doing the same thing with a bit different approaches.
+
+[RSA Made Easy - Randell Heyman](https://www.youtube.com/watch?v=t5lACDDoQTk) - Really good explanation with everything included
+
+[How RSA Works (No proof) - Anthony Vance](https://www.youtube.com/watch?v=Z8M2BTscoD4) - A nice video that goes over how to use formulas and general samples, not going deep into explanation (Actually none) but can be used to understand how to solve the questions, also used technique for Extended Euclidian is cool, first time I occured.
+
+[RSA, tiny example - Eddie Woo](https://www.youtube.com/watch?v=4zahvcJ9glg) - Really simple explanation of how to solve the questions. Don't forget to watch both parts, 1st one is an example second one is mroe of an explanation
+
+[How to Generate the keys - Eddie Woo](https://www.youtube.com/watch?v=oOcTVTpUsPQ) - Second Part of the one above
+
+[Example of how to apply the Methods - Daniel Rees](https://www.youtube.com/watch?v=O-4_oS3G7MI&t=312s) - If you are still confused you can go ahead and watch people applying everything in a question. After that if you still didn't get it, watch it again with ambling this time.
+
+**Lastly for fun :) If you want to learn how puclic key cryptography works watch this short video by ComputerPhile, (These guys are awesome) [Public Key Cryptography](https://www.youtube.com/watch?v=GSIDS_lvRv4)** 
