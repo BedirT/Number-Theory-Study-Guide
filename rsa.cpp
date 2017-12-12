@@ -30,8 +30,8 @@ long chooseAnE(long phiNum){
 	return res;
 }
 
-long findPhiOfN(long N){
-
+long findPhiOfN(int p, int q){
+	return (p-1) * (q-1);
 }
 
 void updateDecryptionKey(long e, long phiNum){
@@ -41,6 +41,19 @@ void updateDecryptionKey(long e, long phiNum){
 			break;
 		} 
 	}
+}
+
+long power(int x, unsigned int y){
+    long res = 1;     // Initialize result  
+    while (y > 0){
+        // If y is odd, multiply x with result
+        if (y & 1) res = res*x;
+  
+        // n must be even now
+        y = y>>1; // y = y/2
+        x = x*x;  // Change x to x^2
+    }
+    return res;
 }
 
 string encrypt() {
@@ -59,7 +72,7 @@ string encrypt() {
 	long myN = randomPrimeP * randomPrimeQ;
 
 	// phi(N) 
-	long phiOfN = findPhiOfN(myN);
+	long phiOfN = findPhiOfN(randomPrimeP, randomPrimeQ);
 
 	// e (encryption key) is found
 	long myEncKey = chooseAnE(phiOfN);

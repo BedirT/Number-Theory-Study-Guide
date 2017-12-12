@@ -191,49 +191,49 @@ blablabla some explanation:
 1. Convert the message to it's binary form. i.e.
    - The text we are trying to encrypt = **AHH**
    - Corresponding number and then binary number for each letter = **0 7 7** = **00000 00111 00111**
-2. Since you have the binary form, create an integer using bits, one by one multiplied by $b_i$ for $i^{th}$ index in the letters binary form, sum all of them, then you will have only one integer. i.e. 
+2. Since you have the binary form, create an integer using bits, one by one multiplied by <a href="https://www.codecogs.com/eqnedit.php?latex=$b_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$b_i$" title="$b_i$" /></a> for <a href="https://www.codecogs.com/eqnedit.php?latex=$i^{th}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$i^{th}$" title="$i^{th}$" /></a> index in the letters binary form, sum all of them, then you will have only one integer. i.e. 
    - The letter we are trying to encrypt = **C**
    - Corresponding binary number for it **C** = **00010** 
-   - Create the integer $m_i$ which will be one of the integers that you will send (Numbers :arrow_double_up:): **0 * 47 + 0 * 50 + 0 * 59 + 1 * 32 + 0 * 11 = 32**
+   - Create the integer <a href="https://www.codecogs.com/eqnedit.php?latex=$m_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$m_i$" title="$m_i$" /></a> which will be one of the integers that you will send (Numbers :arrow_double_up:): **0 * 47 + 0 * 50 + 0 * 59 + 1 * 32 + 0 * 11 = 32**
 3. Do this for every letter you have, and send this to the person, and no one else will be able to read it !
 
 **To Decrypt:**
 
-**We are going to need a Super Increasing Sequence, which has basic rule that every element of it is greater than sum of the element that has smaller index: $a_{i+1} < 2a_i$ - try to think a bit about this :slightly_smiling_face:(We will denote this as $$a$$). And we also will have an integer $N$ which will be denoting the modulus we use. So everyting will be smaller than $N$. Also $\sum a_i < N$. Last thing we choose will be $e$ such that $gcd(e, N) = 1$ which will help me create my public information. (Also will help me decrypt). All these are imoportant componants that we use to create our public information, since I will just go over Mechanics here, I will not explain more so check above description if you didn't do so :arrow_double_up:.** 
+**We are going to need a Super Increasing Sequence, which has basic rule that every element of it is greater than sum of the element that has smaller index: <a href="https://www.codecogs.com/eqnedit.php?latex=$a_{i&plus;1}&space;<&space;2a_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$a_{i&plus;1}&space;<&space;2a_i$" title="$a_{i+1} < 2a_i$" /></a> - try to think a bit about this :slightly_smiling_face:(We will denote this as 'a'). And we also will have an integer 'N' which will be denoting the modulus we use. So everyting will be smaller than 'N'. Also <a href="https://www.codecogs.com/eqnedit.php?latex=$\sum&space;a_i&space;<&space;N$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\sum&space;a_i&space;<&space;N$" title="$\sum a_i < N$" /></a>. Last thing we choose will be e such that <a href="https://www.codecogs.com/eqnedit.php?latex=$gcd(e,&space;N)&space;=&space;1$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$gcd(e,&space;N)&space;=&space;1$" title="$gcd(e, N) = 1$" /></a> which will help me create my public information. (Also will help me decrypt). All these are imoportant componants that we use to create our public information, since I will just go over Mechanics here, I will not explain more so check above description if you didn't do so :arrow_double_up:.** 
 
-1. I have my list of letters (in the form of integers of course) = $M$. i.e.
+1. I have my list of letters (in the form of integers of course) = **M**. i.e.
 
-   - $M$ = [74, 32, 12, 105, 34]
+   - **M** = [74, 32, 12, 105, 34]
 
-2. Derive $e^{-1}$ from $e$. We basically find inverse of e in modulo $N$. i.e.
+2. Derive <a href="https://www.codecogs.com/eqnedit.php?latex=$e^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e^{-1}$" title="$e^{-1}$" /></a> from **e**. We basically find inverse of e in modulo **N**. i.e.
 
-   - $e\ *\ e^{-1}\equiv1\ (mod\ N)$ 
+   - <a href="https://www.codecogs.com/eqnedit.php?latex=$e\&space;\times&space;\&space;e^{-1}\equiv1\&space;(mod\&space;N)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e\&space;\times&space;\&space;e^{-1}\equiv1\&space;(mod\&space;N)$" title="$e\ \times \ e^{-1}\equiv1\ (mod\ N)$" /></a>
 
-3. I will convert all $M_i$ by multiplying it to $e^{-1}$, and create a new list with it let's say $T$ i.e.
+3. I will convert all <a href="https://www.codecogs.com/eqnedit.php?latex=$M_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$M_i$" title="$M_i$" /></a> by multiplying it to <a href="https://www.codecogs.com/eqnedit.php?latex=$e^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e^{-1}$" title="$e^{-1}$" /></a>, and create a new list with it let's say **T** i.e.
 
-   - $T_i = M_i * e^{-1}\ (mod\ N)$
+   - <a href="https://www.codecogs.com/eqnedit.php?latex=$T_i&space;=&space;M_i&space;*&space;e^{-1}\&space;(mod\&space;N)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T_i&space;=&space;M_i&space;*&space;e^{-1}\&space;(mod\&space;N)$" title="$T_i = M_i * e^{-1}\ (mod\ N)$" /></a>
 
-4. I now have the list $T$ that has $n$ elements in it **= [$T_1, T_2 … , T_n$]**, in this case $n$ is $5$.
+4. I now have the list **T** that has $n$ elements in it **= [<a href="https://www.codecogs.com/eqnedit.php?latex=$T_1,&space;T_2,\dots,T_n$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T_1,&space;T_2,\dots,T_n$" title="$T_1, T_2,\dots,T_n$" /></a>]**, in this case **n** is **5**.
 
-5. We now will check $a$ and try to create numbers in $T$ one by one. i.e.
+5. We now will check **a** and try to create numbers in **T** one by one. i.e.
 
-   - $a = [3, 5, 11, 20, 41]$ and $T_1 = 72$
+   - <a href="https://www.codecogs.com/eqnedit.php?latex=$a&space;=&space;[3,&space;5,&space;11,&space;20,&space;41]$\&space;and\&space;$T_1&space;=&space;72$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$a&space;=&space;[3,&space;5,&space;11,&space;20,&space;41]$\&space;and\&space;$T_1&space;=&space;72$" title="$a = [3, 5, 11, 20, 41]$\ and\ $T_1 = 72$" /></a>
 
-   - Find the $x_i$'s in the equation and they will be our binary representation $72 = a_1 * x_1 + a_2 * x_2 + a_3 * x_3 + a_4 * x_4 + a_5 * x_5$ 
+   - Find the <a href="https://www.codecogs.com/eqnedit.php?latex=$a_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$a_i$" title="$a_i$" /></a>'s in the equation and they will be our binary representation $72 = a_1 * x_1 + a_2 * x_2 + a_3 * x_3 + a_4 * x_4 + a_5 * x_5$ 
 
-   - |    $a_i$    |     3     |  5   |  11  |  20  |  41  |
-     | :---------: | :-------: | :--: | :--: | :--: | :--: |
-     | $T_1 = 72$  | $x_1 = 0$ |  0   |  1   |  1   |  1   |
-     | $T_2 = ...$ |    ...    | ...  | ...  | ...  | ...  |
+   - | <a href="https://www.codecogs.com/eqnedit.php?latex=$a_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$a_i$" title="$a_i$" /></a> |                    3                     |  5   |  11  |  20  |  41  |
+     | :--------------------------------------: | :--------------------------------------: | :--: | :--: | :--: | :--: |
+     | <a href="https://www.codecogs.com/eqnedit.php?latex=$T_1&space;=&space;72$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T_1&space;=&space;72$" title="$T_1 = 72$" /></a> | <a href="https://www.codecogs.com/eqnedit.php?latex=$x_1&space;=&space;0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$x_1&space;=&space;0$" title="$x_1 = 0$" /></a> |  0   |  1   |  1   |  1   |
+     | <a href="https://www.codecogs.com/eqnedit.php?latex=$T_2&space;=&space;...$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T_2&space;=&space;...$" title="$T_2 = ...$" /></a> |                   ...                    | ...  | ...  | ...  | ...  |
 
 6. Now that we have the binary values created, we will just convert them back to letters…
 
-**NOTE** The size of $a$ doesn't need to be 5, so after you find the $T_i$'s in binary form, you might have 3 digit binary numbers… What you do is you put all $T_i$'s together and create blocks of 5 so that you can have your letters. i.e.
+**NOTE** The size of a doesn't need to be 5, so after you find the <a href="https://www.codecogs.com/eqnedit.php?latex=$T_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T_i$" title="$T_i$" /></a>'s in binary form, you might have 3 digit binary numbers… What you do is you put all <a href="https://www.codecogs.com/eqnedit.php?latex=$T_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T_i$" title="$T_i$" /></a>'s together and create blocks of 5 so that you can have your letters. i.e.
 
-- $T = [110, 011, 101, 000, 010, 110, 100]$
+- <a href="https://www.codecogs.com/eqnedit.php?latex=$T&space;=&space;[110,&space;011,&space;101,&space;000,&space;010,&space;110,&space;100]$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T&space;=&space;[110,&space;011,&space;101,&space;000,&space;010,&space;110,&space;100]$" title="$T = [110, 011, 101, 000, 010, 110, 100]$" /></a>
 - Our message will be: $110011101000010110100$
 - Now we divide: $11001\ 11010\ 00010\ 11010\ 0$
-- What about the 0 at the end ?? We add 1's instead of every missing element (Dummy text) so it will be $01111$. 
+- What about the 0 at the end ?? We add 1's instead of every missing element (Dummy text) so it will be **01111**. 
 
 #### El Gamal Cryptosystem
 
@@ -245,4 +245,3 @@ Here is the link that you were searching for:
 - [Daniel Rees - El Gamal](https://www.youtube.com/watch?v=Ex9sN5MorRs) - Really good sample, and explanation.
 
 I really liked both videos so… Decide yourself. (second one :smile:) 
-
