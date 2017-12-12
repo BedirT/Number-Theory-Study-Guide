@@ -43,8 +43,8 @@ Fancy name,
 
 ### Topic 4: The Theory on Congruences
 
-[Congurences and Fermat's Little Theorem - DLBmaths](https://www.youtube.com/watch?v=QgPfagOgOAc)
-[Chinese Remainder Theorem](https://www.youtube.com/watch?v=ru7mWZJlRQg)
+- [Congurences and Fermat's Little Theorem - DLBmaths](https://www.youtube.com/watch?v=QgPfagOgOAc)
+- [Chinese Remainder Theorem](https://www.youtube.com/watch?v=ru7mWZJlRQg)
 
 ### Topic 5: Fermat's Theorem
 
@@ -141,7 +141,7 @@ This time it is a bit complex than the others, actually from now on it will not 
 
 And if you have problem with taking inverse of matrix:
 
-[Khan Academy - Taking Inverse of Matrix]()
+[Khan Academy - Taking Inverse of Matrix](https://www.youtube.com/watch?v=01c12NaUQDw)
 
 #### One-time Pad Cipher
 
@@ -153,13 +153,13 @@ This one is the cipher that has most secrecy, and it cannot be improved more sta
 
 Public RSA is the most important and popular public-key crypto system. Couple methods we need to know to use this algorithm are:
 
-- [Eulers Totient Function (phi function)](#Euler's Phi Function)
-- [Euler's Generalization of Fermat's Little Theorem](#Euler's Generalization of Fermat's Theorem)
-- [Extended Euclidian Algorithm]()
+- Eulers Totient Function (phi function)
+- Euler's Generalization of Fermat's Little Theorem
+- Extended Euclidian Algorithm
 
 For main source I will include a paper that my professor handed out, it is explaining really nice and smooth. So if you are ok with a bit of reading the paper should be enough by itself (Only 5 half pages with an example included)
 
-[The Paper - The RSA Algorithm]()
+[The Paper - The RSA Algorithm]() - Not included for now, just have physical version
 
 ###### Little Note: You don't have to watch all of the videos or follow all tutorials here. Choose the ones that works best for you, because most of them are doing the same thing with a bit different approaches.
 
